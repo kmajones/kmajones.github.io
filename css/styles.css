@@ -1,4 +1,38 @@
 /* Your Website Styles */
+	/* Your Website Styles */
+section{
+margin:0 10px;
+}
+div{
+background: #666;
+height:200px;
+margin:0;
+
+}
+
+nav ul{
+display:inline;
+list-style: none;
+
+}
+
+.grid{
+width:100%;
+margin:0;
+}
+
+div h1, div h2{
+text-align: center;
+
+}
+
+/* Show Grid */
+.showgrid {
+background: url("../img/grid-bg.png") repeat-y;
+}
+.container{
+width:100%;
+}
 
 
 /* Show Grid */
