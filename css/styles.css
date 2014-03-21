@@ -17,7 +17,7 @@
 	font-size: 2em;
   	font-family: "myriad pro", sans-serif;
   	color:#fff;
-  	line-height: 500px;
+  	line-height: 600px;
  	/*margin-left:auto; 
 	margin-right:auto;*/
 }
@@ -31,15 +31,44 @@
 	color:#DF5A49;
 }
 
+.about-me p{
+	color:#666;
+}
+
 .resume{
-	background: url("../img/bg2.png")
+	/*background: url("../img/bg2.png")*/
+background: #45B29D;
+color:#fff;
 }
 
-.contact-me{}
+.resume h1{
+	height:250px;
+	color:#fff;
+}
 
+
+
+/*Gallery Styling*/
 .portfolio{
-	background: #333;
+	background: url("../img/bg2.png");
 }
+
+.portfolio h1{
+	height:200px;
+	color:#DF5A49;
+}
+
+
+/*contact section*/
+.contact-me{
+		background: #45B29D;
+		color:#fff;
+}
+
+.contact-me p{
+	text-align:center;
+}
+
 
 .welcome, .about-me, .resume, .portfolio{
 	height:1000px;
@@ -56,11 +85,14 @@
 
 h1{
 	font-size: 6em;
-	height:400px;
+	height:300px;
 	font-family: "Neou-Bold", sans-serif;
 	margin:0 auto;
 	line-height:300%;
 }
+
+}
+p{padding:10px 0;}
 
 section{
 	height:89%;
@@ -133,6 +165,9 @@ a{
 
 /* Styles the thumbnail */
 
+a.lightbox{
+color:transparent;
+}
 
 a.lightbox img {
 height: 200px;
@@ -184,6 +219,7 @@ display: block;
 width:100%;
 height:100%;
 text-decoration: none;
+color:#fff;
 position: absolute;
 top:0;
 right: -50px;
@@ -194,6 +230,7 @@ right: -50px;
 display: block;
 width:100px;
 height:100px;
+color:#fff;
 
 /* box-sizing: border-box; */
 text-decoration: none;
@@ -207,6 +244,7 @@ right: 20%;
 display: block;
 width:150px;
 height:50px;
+color:#fff;
 /* box-sizing: border-box; */
 text-decoration: none;
 position: absolute;
