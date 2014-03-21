@@ -1,6 +1,31 @@
 /* Font Imports */
-@font-face { font-family: "Neou-Bold"; src: url('Neou-Bold.tff'); } 
+@font-face { font-family: "Neou-Bold"; src: url('fonts/Neou-Bold.tff'); } 
 	/* Your Website Styles */
+
+/*General Nav styling*/
+nav{
+  position:fixed;
+  top:0;
+  background: #000;
+  opacity:.5;
+  width:100%;
+  color:#fff;
+}
+
+ul li{
+  list-style:none;
+  display:inline;
+  padding:0 1.25em; /*20px*/
+  margin-left:auto;
+  margin-right:auto;
+}
+
+nav a{	
+  text-decoration:none;
+  padding: 0 3.75em; /*60px*/
+  font-size:1.125em; /*18*/
+  color:#fff;
+}
 
 /*Welcome section styling */
 .welcome {
@@ -10,16 +35,14 @@
 	margin:0 auto;
 	font-size: 10em;
 	color:#fff;
-	line-height: 1000px;
+	line-height: 600%; /*1000px */
 }
 .welcome h2{
 	margin:0 35% 0 40%;
 	font-size: 2em;
   	font-family: "myriad pro", sans-serif;
   	color:#fff;
-  	line-height: 600px;
- 	/*margin-left:auto; 
-	margin-right:auto;*/
+  	line-height: 1700%; /*600px*/
 }
 
 /*About section styling */
@@ -27,7 +50,7 @@
 	background: url("../img/whitey.png");
 }
 .about-me h1{
-	height:300px;
+	height:100%;
 	color:#DF5A49;
 }
 
@@ -36,16 +59,14 @@
 }
 
 .resume{
-	/*background: url("../img/bg2.png")*/
 background: #45B29D;
 color:#fff;
 }
 
 .resume h1{
-	height:250px;
+	height:25%; /*250px*/
 	color:#fff;
 }
-
 
 
 /*Gallery Styling*/
@@ -92,7 +113,8 @@ h1{
 }
 
 }
-p{padding:10px 0;}
+p{
+	padding:10px 0;}
 
 section{
 	height:89%;
@@ -110,36 +132,7 @@ text-align: center;
 
 }
 
-/* Show Grid */
 
-.container{
-width:100%;
-}
-
-/*General Nav styling*/
-nav{
-  position:fixed;
-  top:0;
-  background: #000;
-  opacity:.5;
-  width:100%;
-  color:#fff;
-}
-
-ul li{
-  list-style:none;
-  display:inline;
-  padding:0 20px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-nav a{	
-  text-decoration:none;
-  padding: 0 60px;
-  font-size:18px;
-  color:#fff;
-}
 
 /*Lightbox*/
  /*.lightbox{
@@ -278,3 +271,35 @@ img:hover{
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
 }
+
+
+/*RWD*/
+
+@media screen and (max-width: 1024px) {
+
+div{
+	width:100%;
+}
+
+}
+
+
+
+/* Smaller ----------- */
+@media screen and (max-width : 750px) {
+
+section{width: 100%;}
+
+nav ul li{
+  display:none;
+  padding:0;}
+.welcome h2{
+	width:60%;
+	margin-left: 20%;}
+
+.welcome, .about-me, .resume, .portfolio, .contact-me{
+	height: 100%;
+}
+
+}
+
