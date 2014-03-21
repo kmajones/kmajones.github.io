@@ -1,40 +1,58 @@
 /* Font Imports */
 @font-face { font-family: "Neou-Bold"; src: url('Neou-Bold.tff'); } 
 	/* Your Website Styles */
-
-.welcome h1{
-	font-size: 3em;
-	font-family: "Neou-Bold", sans-serif;
-	position:absolute;
-	margin-top:250px;
-	margin-left:50%;
-	
+body{
+	 background: url("../img/bg2.png");
 }
 
+h1{
+	font-size: 5em;
+	font-family: "Neou-Bold", sans-serif;
+	margin-bottom:0;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:200px;
+}
+
+.welcome, 
+ .resume, .contact-me{
+	background: url("../img/whitey.png");
+}
+
+.about-me{
+	background: #333;
+}
+.portfolio{
+	background: #333;
+}
+
+.welcome{
+	height:1000px;
+}
 .welcome h2{
 	font-size: 2em;
   	font-family: "myriad pro", sans-serif;
-  	position:absolute;
-	margin-top:310px;
-	margin-left:40%; 
-	/*Check relative margins later*/
+ 	margin-left:auto; 
+	margin-right:auto;
+	
 }
 
+section{
+	margin:0 0 0 0;
+}
  
+.content{
+	width:40%;
+	margin-right: auto;
+	margin-left: auto;
 
+}
 /*section{
 margin:0 10px;
 }*/
 section{
-	background: #333;
-}
-
-div{
-background: #666;
-height:600px;
-padding:10px, 0;
-margin:0;
-
+	background: #666;
+	height:89%;
 }
 
 nav ul{
@@ -61,19 +79,41 @@ background: url("../img/grid-bg.png") repeat-y;
 width:100%;
 }
 
+/*General Nav styling*/
+nav{
+  position:fixed;
+  top:0;
+  background: #000;
+  opacity:.5;
+  width:100%;
+  color:#fff;
+}
+
+ul li{
+  list-style:none;
+  display:inline;
+  padding:0 20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+nav a{	
+  text-decoration:none;
+  padding: 0 60px;
+  font-size:18px;
+  color:#fff;
+}
 
 /*Lightbox*/
-
-
+ /*.lightbox{
+	position:relative;
+	/*right:50%;
+	left:30%;*/
 }
-/*div img{
-	background-size: 100%;
-
-}*/
-
 a{
   color:#fff;
   font-size:1.2em;
+
 }
 /* For Descriptions */
 .type-style{
@@ -88,12 +128,13 @@ a{
 
 /* Styles the thumbnail */
 
+
 a.lightbox img {
 height: 200px;
 width: 160px;
 border: 3px solid #fff;
 box-shadow: 0 0 10px rgba(0,0,0,.3);
-margin: 10px;
+margin: 8%;
 border-radius:15px;
 background-position: 0px -30px;
 }
@@ -107,7 +148,7 @@ position: fixed;
 width:100%;
 background: rgba(0,0,0,.7);
 width: 100%;
-opacity: 0;
+opacity: .5;
  -webkit-transition: opacity .5s ease-in-out;
  -moz-transition: opacity .5s ease-in-out;
  -o-transition: opacity .5s ease-in-out;
