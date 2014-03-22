@@ -138,7 +138,9 @@ div h1, div h2{
 text-align: center;
 
 }
-
+.gallery{
+	display:inline;
+	}|
 
 
 /*Lightbox*/
