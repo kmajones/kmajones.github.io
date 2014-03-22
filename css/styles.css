@@ -1,4 +1,6 @@
 /* Font Imports */
+
+
 @font-face {
     font-family: "Neou-Bold";
     src: url("../fonts/Neou-Bold.otf"), url("../fonts/Neou-Bold.ttf") format('truetype');
@@ -57,7 +59,7 @@ nav a{
 	background: url("../img/whitey.png");
 }
 .about-me h1{
-	height:100%;
+	height:300px;
 	color:#DF5A49;
 }
 
@@ -140,9 +142,9 @@ text-align: center;
 }
 .gallery{
 	display:inline;
-	}|
+	}
 
-
+/*http://www.designcouch.com/home/why/2013/11/01/responsive-css3-lightbox-with-no-javascript/*/
 /*Lightbox*/
  /*.lightbox{
 	position:relative;
@@ -299,16 +301,13 @@ div{
 
 section{width: 100%;}
 
-nav ul li{
+/*nav ul li{
   display:none;
   padding:0;}
 .welcome h2{
 	width:60%;
 	margin-left: 20%;}
 
-.welcome, .about-me, .resume, .portfolio, .contact-me{
-	height: 100%;
-}
 
 }
-
+*/
