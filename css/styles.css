@@ -1,5 +1,12 @@
 /* Font Imports */
-@font-face { font-family: "Neou-Bold"; src: url('fonts/Neou-Bold.tff'); } 
+@font-face {
+    font-family: "Neou-Bold";
+    src: url("../fonts/Neou-Bold.otf"), url("../fonts/Neou-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 	/* Your Website Styles */
 
 /*General Nav styling*/
